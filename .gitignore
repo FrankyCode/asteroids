@@ -1,2 +1,5 @@
 # Virtual Environment
-venv
+venv/
+
+# Cache Files
+__pycache__/
