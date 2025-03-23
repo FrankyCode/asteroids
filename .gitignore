@@ -3,3 +3,6 @@ venv/
 
 # Cache Files
 __pycache__/
+
+# Temporary Files
+notes.md
