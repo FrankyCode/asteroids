@@ -44,6 +44,11 @@ def setupScreen():
 
         # Check for collisions between the player and asteroids
         for asteroid in all_asteroids:
+            for bullet in all_shots:
+                if asteroid.collides_with(bullet):
+                    asteroid.kill()
+                    bullet.kill()
+
             if asteroid.collides_with(player):
                 print("Game Over!")
                 sys.exit()
