@@ -42,13 +42,16 @@ def setupScreen():
         # Update all objects in the updatable group
         updatable.update(dt)
 
-        # Check for collisions between the player and asteroids
+        # Check for collisions
         for asteroid in all_asteroids:
+            
+            # Check for collisions between Asteroids and Bullets
             for bullet in all_shots:
                 if asteroid.collides_with(bullet):
                     asteroid.kill()
                     bullet.kill()
 
+            # Check for collisions between Asteroids and the Player
             if asteroid.collides_with(player):
                 print("Game Over!")
                 sys.exit()
