@@ -6,6 +6,7 @@ from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
+from shot import Shot
 
 def setupScreen():
     print(f"Screen width: {SCREEN_WIDTH}")
@@ -19,9 +20,11 @@ def setupScreen():
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
     all_asteroids = pygame.sprite.Group()
+    all_shots = pygame.sprite.Group()
 
     # Set the containers for the Player, Asteroids, and AsteroidField
     Asteroid.containers = (all_asteroids, updatable, drawable)
+    Shot.containers = (all_shots, updatable, drawable)
     AsteroidField.containers = updatable
     Player.containers = (updatable, drawable)
 
