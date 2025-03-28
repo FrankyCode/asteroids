@@ -2,7 +2,7 @@
 Asteroids game in Python
 
 # Install and Config
-    To follow best practice, I recommend using a virtual environment (venv) to keep the Python version of each library needed for this project separate from other Python projects.
+> To follow best practice, I recommend using a virtual environment (venv) to keep the Python version of each library needed for this project separate from other Python projects.
 
 ### *With Virtual Environment*
 1. To create one (venv) (at the top level of your project directory) use this code `python3 -m venv venv`
