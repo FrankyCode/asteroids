@@ -17,6 +17,8 @@ Asteroids game in Python
 
 # How to play?
 - Run the game with `python3 main.py`
+- Use arrow keys or W/A/S/D for move the Spaceship
+- Press space bar to shoot
 
 
 ## DOC
