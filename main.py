@@ -48,7 +48,7 @@ def setupScreen():
             # Check for collisions between Asteroids and Bullets
             for bullet in all_shots:
                 if asteroid.collides_with(bullet):
-                    asteroid.kill()
+                    asteroid.split()
                     bullet.kill()
 
             # Check for collisions between Asteroids and the Player
